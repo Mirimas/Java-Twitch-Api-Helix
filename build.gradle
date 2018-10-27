@@ -42,7 +42,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             // Setup artifactId
-            artifactId = 'new-api'
+            artifactId = 'api-helix'
             from components.java
         }
     }
