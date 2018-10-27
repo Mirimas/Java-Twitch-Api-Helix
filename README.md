@@ -61,7 +61,7 @@ twitch.auth().setAccessToken("my-access-token");
 ## Dependencies
 
 * [Java Async HTTP Client](https://github.com/urgrue/java-async-http/releases/tag/2.1.2) ver. 2.1.2 // Jar include to the project until it not in the maven repository
-* [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.4
+* [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.7
 
 ## Install
 

@@ -24,7 +24,7 @@ configurations {
 
 dependencies {
     // Data-binding; ObjectMapper, JsonNode and related classes are here
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.7'
     // Http client. Not in maven repository so use jar from libs folder
     //compile 'com.mb3364.http:async-http-client:2.1.2'
     // Utils

@@ -61,9 +61,7 @@ public class Twitch {
     public void setClientId(String clientId) {
         this.clientId = clientId;
         // Update client id in all resources
-        for (AbstractResource resource : resources.values()) {
-            resource.setClientId(clientId);
-        }
+        resources.values().forEach(resource -> resource.setClientId(clientId));
     }
 
     private AbstractResource getResource(ResourceType key) {
