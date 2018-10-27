@@ -1,0 +1,56 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+group = 'ru.mirrobot.twitch'
+version = '0.1'
+
+description = ""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    // configuration that holds jars to include in the jar
+    extraLibs
+}
+
+dependencies {
+    // Data-binding; ObjectMapper, JsonNode and related classes are here
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    // Http client. Not in maven repository so use jar from libs folder
+    //compile 'com.mb3364.http:async-http-client:2.1.2'
+    // Utils
+    compile 'org.apache.commons:commons-lang3:3.7'
+    // Testing
+    testCompile 'junit:junit:4.12'
+
+    // Not in maven repository so use local jar
+    extraLibs files ('libs/async-http-client-2.1.2.jar')
+    // Add jars to jar
+    configurations.compile.extendsFrom(configurations.extraLibs)
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            // Setup artifactId
+            artifactId = 'api-new-wrapper'
+            from components.java
+        }
+    }
+}
+
+jar {
+    from {
+        // Include other jars classes in the final jar
+        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
