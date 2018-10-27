@@ -31,26 +31,8 @@ twitch.auth().setAccessToken(accessToken);
 twitch.users().get(new UsersResponseHandler() {
     @Override
     public void onSuccess(final Users users) {
-        final User user = users.getData().get(0);
+        User user = users.getData().get(0);
         System.out.println("Success received user: " + user.getLogin());
-
-        // Additionally get user follows count
-        twitch.usersFollows().get(user.getId(), 1, new UsersFollowsResponseHandler() {
-            @Override
-            public void onSuccess(UsersFollows usersFollows) {
-                System.out.println("User: " + user.getLogin() + " has total follows:" + usersFollows.getTotal());
-            }
-
-            @Override
-            public void onFailure(int statusCode, String statusMessage, String errorMessage) {
-                /* Twitch API responded with an error message */
-            }
-
-            @Override
-            public void onFailure(Throwable e) {
-                /* Unable to access Twitch, or error parsing the response */
-            }
-        });
     }
 
     @Override
