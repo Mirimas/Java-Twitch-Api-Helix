@@ -42,7 +42,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             // Setup artifactId
-            artifactId = 'api-new-wrapper'
+            artifactId = 'new-api'
             from components.java
         }
     }
