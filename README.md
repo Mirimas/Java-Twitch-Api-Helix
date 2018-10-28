@@ -6,10 +6,12 @@
 Async Twitch New API Wrapper is a asynchronous java wrapper for interaction with API of the [Twitch New API](https://dev.twitch.tv/docs/api/).
 
 Currently support:
-*  users
-*  users follows
-*  streams
-*  games
+
+  * users
+  * users follows
+  * streams
+  * games
+
 
 Please feel free to report any issues or contribute code.
 
@@ -56,12 +58,13 @@ twitch.auth().setAccessToken("my-access-token");
 ```
 
 ## Documentation
-*  The [Twitch API](https://dev.twitch.tv/docs/api/) documentation will best explain the functionality of each endpoint. 
+
+  * The [Twitch API](https://dev.twitch.tv/docs/api/) documentation will best explain the functionality of each endpoint. 
 
 ## Dependencies
 
-*  [Java Async HTTP Client](https://github.com/urgrue/java-async-http/releases/tag/2.1.2) ver. 2.1.2 // Jar include to the project until it not in the maven repository
-*  [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.7
+  * [Java Async HTTP Client](https://github.com/urgrue/java-async-http/releases/tag/2.1.2) ver. 2.1.2 // Jar include to the project until it not in the maven repository
+  * [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.7
 
 ## Install
 
