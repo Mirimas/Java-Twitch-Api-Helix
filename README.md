@@ -1,6 +1,6 @@
 # Async Twitch New API Wrapper
 
-[![Build Status](https://api.travis-ci.org/Mirimas/Java-Twitch-Api-New-Wrapper.svg?branch=master)](https://travis-ci.org/Mirimas/Java-Twitch-Api-New-Wrapper)
+[![Build Status](https://travis-ci.org/Mirimas/Java-Twitch-Api-Helix.svg?branch=master)](https://travis-ci.org/Mirimas/Java-Twitch-Api-Helix)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e9af5c225b034d139c652b7db7dae6be)](https://app.codacy.com/app/Mirimas/Java-Twitch-Api-New-Wrapper?utm_source=github.com&utm_medium=referral&utm_content=Mirimas/Java-Twitch-Api-New-Wrapper&utm_campaign=Badge_Grade_Dashboard)
 [![Download](https://api.bintray.com/packages/mirimas/Mirimas/Java-Twitch-Api-Helix/images/download.svg?version=0.1)](https://github.com/Mirimas/Java-Twitch-Api-Helix/releases)
 
