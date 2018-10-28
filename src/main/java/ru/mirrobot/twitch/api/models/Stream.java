@@ -25,11 +25,11 @@ public class Stream {
 		LIVE("live"),
 		VODCAST("vodcast");
 
+		private final String key;
+
 		Type(String key) {
 			this.key = key;
 		}
-
-		private final String key;
 
 		@Override
 		public String toString() {

@@ -23,11 +23,11 @@ public class User {
         GLOBAL_MOD("global_mod"),
         EMPTY("");
 
+        private final String key;
+
         Type(String key) {
             this.key = key;
         }
-
-        private final String key;
 
         @Override
         public String toString() {
@@ -50,11 +50,11 @@ public class User {
 		AFFILIATE("affiliate"),
 		EMPTY("");
 
-		 BroadcasterType(String key) {
+        private final String key;
+
+		BroadcasterType(String key) {
 			this.key = key;
 		}
-
-		private final String key;
 
 		@Override
 		public String toString() {

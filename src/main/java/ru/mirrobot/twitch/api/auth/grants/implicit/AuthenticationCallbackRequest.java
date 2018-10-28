@@ -104,26 +104,14 @@ public class AuthenticationCallbackRequest implements Runnable {
      */
     private void processRequest() throws IOException {
         // Get a reference to the socket's input and output streams.
-        InputStream is = socket.getInputStream();
         DataOutputStream os = new DataOutputStream(socket.getOutputStream());
 
         // Set up input stream filters.
-        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
-        // Get the request line of the HTTP request message.
-        String requestLine = br.readLine();
-
-        // Store the request line for debugging.
-        //String rawRequest = "\n" + requestLine;
-
-        // Read the header lines.
-        String headerLine = null;
-        while ((headerLine = br.readLine()).length() != 0) {
-            //rawRequest += headerLine + "\n";
+        String requestLine;
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+            // Get the request line of the HTTP request message.
+            requestLine = br.readLine();
         }
-
-        // DEBUG: Print request
-        //System.out.println(rawRequest);
 
         // Parse the request line.
         StringTokenizer tokens = new StringTokenizer(requestLine);
@@ -192,7 +180,6 @@ public class AuthenticationCallbackRequest implements Runnable {
 
         // Close streams and socket.
         os.close();
-        br.close();
         socket.close();
 
         // Send callbacks
