@@ -2,7 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/Mirimas/Java-Twitch-Api-New-Wrapper.svg?branch=master)](https://travis-ci.org/Mirimas/Java-Twitch-Api-New-Wrapper)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e9af5c225b034d139c652b7db7dae6be)](https://app.codacy.com/app/Mirimas/Java-Twitch-Api-New-Wrapper?utm_source=github.com&utm_medium=referral&utm_content=Mirimas/Java-Twitch-Api-New-Wrapper&utm_campaign=Badge_Grade_Dashboard)
-[![Download](https://api.bintray.com/packages/mirimas/Mirimas/Java-Twitch-Api-Helix/images/download.svg?version=0.1) ](https://bintray.com/mirimas/Mirimas/Java-Twitch-Api-Helix/0.1/link)
+[![Download](https://api.bintray.com/packages/mirimas/Mirimas/Java-Twitch-Api-Helix/images/download.svg?version=0.1)](https://bintray.com/mirimas/Mirimas/Java-Twitch-Api-Helix/0.1/link)
 
 Async Twitch New API Wrapper is a asynchronous java wrapper for interaction with API of the [Twitch New API](https://dev.twitch.tv/docs/api/).
 
@@ -65,6 +65,7 @@ twitch.auth().setAccessToken("my-access-token");
 
 * [Java Async HTTP Client](https://github.com/urgrue/java-async-http/releases/tag/2.1.2) ver. 2.1.2 // Jar include to the project until it not in the maven repository
 * [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.7
+* [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/) ver. 3.7
 
 ## Install
 
