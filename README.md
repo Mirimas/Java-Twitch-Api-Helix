@@ -67,10 +67,6 @@ twitch.auth().setAccessToken("my-access-token");
 * [Jackson JSON Processor - Databind](https://github.com/FasterXML/jackson-databind/wiki) ver. 2.9.7
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/) ver. 3.7
 
-## Install
-
-This library and the 2 above mentioned dependencies are required.
-
 ## Thanks
 
 Inspired by [Java-Twitch-Api-Wrapper](https://github.com/urgrue/Java-Twitch-Api-Wrapper).
